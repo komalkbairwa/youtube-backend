@@ -12,8 +12,8 @@ const connectDB = async () => {
     console.log('Connecting to MongoDB with URI:', fullUri); // Debug log
 
     const connectInstance = await mongoose.connect(fullUri, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true
+      // useNewUrlParser: true,
+      // useUnifiedTopology: true
     });
 
     console.log('Connection established', connectInstance.connection.host);
